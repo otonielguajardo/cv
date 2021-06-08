@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Otoniel Guajardo - Javascript Developer</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    </head>
+    <body>
+        <div id="page">
+            <aside>
+                <div style="text-align: right">
+                    <img v-if="cv.pictureUrl" :src="cv.pictureUrl" :alt="cv.fullName" />
+                </div>
+                <div>
+                    <p>{{cv.phone}}</p>
+                    <p>{{cv.address}}</p>
+                    <p>{{cv.email}}</p>
+                </div>
+                <h2>Habilidades</h2>
+                <ul class="pills">
+                    <li v-for="skill in cv.skills">{{skill}}</li>
+                </ul>
+                <h2>Tecnologías</h2>
+                <ul>
+                    <li v-for="tech in cv.stack">
+                        <strong>{{tech.name}} </strong> - <span>{{moment().diff(moment(tech.start),'years')}} años</span>
+                    </li>
+                </ul>
+                <p></p>
+                <p>
+                    <i>{{cv.quote}}</i>
+                </p>
+            </aside>
+            <main>
+                <h1>{{cv.fullName}}</h1>
+                <p><strong>{{cv.job}}</strong> con más de {{ moment().diff(moment(cv.start),'years')}} años de experiencia {{cv.bio}}</p>
+                <h2>Experiencia</h2>
+                <ul v-for="job in cv.jobs">
+                    <li class="job">
+                        <h3>
+                            <strong>{{job.company}}</strong>, {{job.city}} —
+                            <i>
+                                {{job.title}}
+                                <small>{{job.subtitle}}</small>
+                            </i>
+                        </h3>
+                        <p>
+                            <span>{{printDuration(job.start,job.end)}}</span>
+                        </p>
+                        <p v-if="job.description">{{job.description}}</p>
+                        <ul>
+                            <li v-for="task in job.tasks">{{task}}</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Formación</h2>
+                <ul v-for="school in cv.schools">
+                    <li class="school">
+                        <h3><strong>{{school.title}}</strong></h3>
+                        <span>{{school.name}}</span>
+                        <p>
+                            <small>{{ printDuration(school.start, school.end, 'YYYY', false) }}</small>
+                        </p>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
