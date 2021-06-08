@@ -1,7 +1,7 @@
 new Vue({
 	el: '#page',
 	data: {
-		cv: null
+		cv: {}
 	},
 	methods: {
 		fetchCvData() {
