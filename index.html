@@ -12,8 +12,8 @@
     <body>
         <div id="page">
             <aside>
-                <div style="text-align: right">
-                    <img v-if="cv.pictureUrl" :src="cv.pictureUrl" :alt="cv.fullName" />
+                <div v-if="cv.pictureUrl">
+                    <img :src="cv.pictureUrl" :alt="cv.fullName" />
                 </div>
                 <div>
                     <p>{{cv.phone}}</p>
