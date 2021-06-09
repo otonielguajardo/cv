@@ -19,6 +19,11 @@
                     <p>{{cv.phone}}</p>
                     <p>{{cv.address}}</p>
                     <p>{{cv.email}}</p>
+                    <p v-for="link in cv.links">
+                        <a :href="link.url">
+                            <small>{{link.url}}</small>
+                        </a>
+                    </p>
                 </div>
                 <h2>Habilidades</h2>
                 <ul class="pills">

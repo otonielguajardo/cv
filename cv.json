@@ -8,6 +8,7 @@
     "address": "Morelia, Michoacán, MX",
     "email": "otonielguajardo@yahoo.com",
     "quote": "Mi‌ ‌background‌ ‌como‌‌ comunicador‌ ‌visual‌ ‌y‌ ‌mi‌‌ profundo‌ ‌interés‌ ‌por‌ ‌la‌‌ ingeniería‌ ‌de‌ ‌software,‌ ‌me‌ ‌han‌‌ ayudado‌ ‌a‌ ‌encontrar‌ ‌formas‌‌ creativas‌ ‌de‌ ‌resolver‌‌ problemas.‌",
+    "links": [{ "name": "github", "url": "https://github.com/otonielguajardo/cv" }],
     "stack": [
         { "name": "Angular", "start": "2017" },
         { "name": "Vue", "start": "2016" },
