@@ -9,6 +9,9 @@ new Vue({
 				.then(res => res.json())
 				.then(data => (this.cv = data));
 		},
+		printPhone(phone) {
+			return phone.replace(/(\d{2})(\d{4})(\d{4})/, '$1 $2 $3');
+		},
 		printDuration(start, end = null, format = 'MMM YYYY', humanReadable = true) {
 
 			let startDate = moment(start).format(format);

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Otoniel Guajardo - Javascript Developer</title>
-        <link rel="stylesheet" href="style.css?ver=1" />
+        <link rel="stylesheet" href="style.css?ver=2" />
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
         <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
     </head>
@@ -16,13 +16,13 @@
                     <img :src="cv.pictureUrl" :alt="cv.fullName" />
                 </div>
                 <div>
-                    <p><a href="tel:'{{cv.phone}}">{{cv.phone}}</a></p>
+                    <p><a :href="'tel:'+cv.phone">{{ printPhone(cv.phone) }}</a></p>
                     <p>{{cv.city}}, <span class="sm-hide">{{cv.state}},</span> {{cv.country}}</p>
                     <p class="sm-hide">{{cv.email}}</p>
                     <p v-for="link in cv.links">
                         <a :href="link.url" target="_blank">
                             <small class="sm-hide">{{link.url}}</small>
-                            <small class="md-hide">{{link.name}}</small>
+                            <span class="md-hide">{{link.name}}</span>
                         </a>
                     </p>
                 </div>

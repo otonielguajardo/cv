@@ -112,9 +112,18 @@ img {
     img {
         width: 100%;
     }
+    a,
+    a:visited {
+        color: blue;
+    }
 }
 @media only screen and (min-width: 600px) {
     .md-hide {
         display: none;
+    }
+    a,
+    a:visited {
+        text-decoration: none;
+        color: initial;
     }
 }
