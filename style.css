@@ -100,7 +100,15 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+    aside,
+    main {
+        padding: 15px;
+    }
+    main {
+        padding-left: 0;
+    }
     aside {
+        font-size: 90%;
         text-align: center;
     }
     ul.pills {
