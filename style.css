@@ -23,6 +23,7 @@ h2 {
 }
 
 h1 {
+    line-height: 30px;
     font-size: 28px;
 }
 
@@ -54,13 +55,6 @@ main {
 aside > *:not(:last-child),
 main > *:not(:last-child) {
     margin-bottom: 27px;
-}
-
-img {
-    object-fit: cover;
-    height: 140px;
-    width: 60%;
-    border-radius: 5px;
 }
 
 aside {
@@ -96,4 +90,31 @@ ul.pills li {
     margin: 0px 4px 4px 0px;
     font-size: 14px;
     font-weight: bold;
+}
+
+img {
+    object-fit: cover;
+    height: 140px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    aside {
+        text-align: center;
+    }
+    ul.pills {
+        justify-content: center;
+    }
+    .sm-hide {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .md-hide {
+        display: none;
+    }
 }

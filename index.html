@@ -16,12 +16,13 @@
                     <img :src="cv.pictureUrl" :alt="cv.fullName" />
                 </div>
                 <div>
-                    <p>{{cv.phone}}</p>
-                    <p>{{cv.address}}</p>
-                    <p>{{cv.email}}</p>
+                    <p><a href="tel:'{{cv.phone}}">{{cv.phone}}</a></p>
+                    <p>{{cv.city}}, <span class="sm-hide">{{cv.state}},</span> {{cv.country}}</p>
+                    <p class="sm-hide">{{cv.email}}</p>
                     <p v-for="link in cv.links">
-                        <a :href="link.url">
-                            <small>{{link.url}}</small>
+                        <a :href="link.url" target="_blank">
+                            <small class="sm-hide">{{link.url}}</small>
+                            <small class="md-hide">{{link.name}}</small>
                         </a>
                     </p>
                 </div>
@@ -32,7 +33,7 @@
                 <h2>Tecnologías</h2>
                 <ul>
                     <li v-for="tech in cv.stack">
-                        <strong>{{tech.name}} </strong> - <span>{{moment().diff(moment(tech.start),'years')}} años</span>
+                        <strong>{{tech.name}}</strong><span class="sm-hide"> - {{moment().diff(moment(tech.start),'years')}} años</span>
                     </li>
                 </ul>
                 <p></p>
@@ -54,7 +55,8 @@
                             </i>
                         </h3>
                         <p>
-                            <span>{{printDuration(job.start,job.end)}}</span>
+                            <span class="sm-hide">{{printDuration(job.start,job.end)}}</span>
+                            <span class="md-hide">{{printDuration(job.start,job.end,'MMM YYYY', false)}}</span>
                         </p>
                         <p v-if="job.description">{{job.description}}</p>
                         <ul>
