@@ -1,0 +1,18 @@
+body.dark {
+    background-color: rgb(35, 40, 52);
+    color: rgb(203, 204, 198);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dark a,
+.dark a:visited {
+    color: rgb(104, 113, 118);
+}
+
+.dark #menu img {
+    background-color: rgb(35, 40, 52);
+}
+
+.dark #printer {
+    display: none;
+}

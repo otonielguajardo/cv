@@ -10,6 +10,7 @@ new Vue({
 				.then(data => (this.cv = data));
 		},
 		printPhone(phone) {
+			if (!phone) return false;
 			return phone.replace(/(\d{2})(\d{4})(\d{4})/, '$1 $2 $3');
 		},
 		printDuration(start, end = null, format = 'MMM YYYY', humanReadable = true) {
