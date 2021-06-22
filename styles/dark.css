@@ -4,6 +4,10 @@ body.dark {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.dark h2 {
+    color: #e5c07b;
+}
+
 .dark a,
 .dark a:visited {
     color: rgb(104, 113, 118);
