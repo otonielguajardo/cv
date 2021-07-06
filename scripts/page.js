@@ -22,11 +22,20 @@ new Vue({
 			let years = 0;
 
 			if (months > 12) {
-				years = months > 12 ? Math.floor(months / 12) : 0;
-				months = months - (Math.floor(months / 12) * 12)
+				years = months >= 12 ? Math.floor(months / 12) : 0;
+				months = months - (Math.floor(months / 12) * 12) + 1
 			}
 
-			let time = years > 0 ? `${years} Años y ${months} Meses` : `${months} Meses`;
+			let time = `${months} Meses`;
+			if (years > 0) {
+				time = `${years} Años`;
+				if (months == 1) {
+					time += ` y ${months} Mes`;
+				} else if (months > 0) {
+					time += ` y ${months} Meses`;
+				}
+			}
+
 			let duration = humanReadable ? ` (${time})` : '';
 
 			return `${startDate} - ${endDate}` + duration;
