@@ -6,3 +6,11 @@ body.classic {
 .classic #menu img {
     background-color: white;
 }
+
+h2 {
+    color: rgb(32, 121, 199);
+}
+
+ul.pills li {
+    background-color: rgba(0, 0, 0, 0.05);
+}
