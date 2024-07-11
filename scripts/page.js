@@ -1,50 +1,92 @@
 new Vue({
 	el: '#page',
 	data: {
-		cv: {}
+		cv: {
+			jobs: [],
+			tools: [],
+		}
 	},
 	methods: {
 		fetchCvData() {
 			fetch("cv.json")
 				.then(res => res.json())
-				.then(data => (this.cv = data));
+				.then(data => {
+					
+					let pmTools = data.tools
+						.filter((tool) => tool.type == 1);
+					
+					let devTools = data.tools
+						.filter((tool) => tool.type == 2);
+
+					let tools = [...pmTools, ...devTools];
+
+					// shows all jobs, and only 3 tasks for first 2 jobs
+					let jobs = data.jobs.map((job, index) => {
+						let description = index <= 3 ? job.description : null;
+						
+						let tasks = [];
+						if (index == 0) tasks = job.tasks.slice(0, 4);
+						if (index == 1) tasks = job.tasks.slice(0, 3);
+						
+						return {
+							...job,
+							description,
+							tasks
+						}
+					});
+					
+					this.cv = {
+						...data,
+						tools,
+						jobs
+					};
+				});
 		},
 		printPhone(phone) {
 			if (!phone) return false;
 			return phone.replace(/(\d{2})(\d{4})(\d{4})/, '$1 $2 $3');
 		},
-		printDuration(start, end = null, format = 'MMM YYYY', humanReadable = true) {
+		printDuration(start, end = null, includeMonths = true) {
+			let startDate = new Date(start);
+			let endDate = end ? new Date(end) : new Date();
 
-			let startDate = moment(start).format(format);
-			let endDate = end ? moment(end).format(format) : 'Presente';
+			let totalMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+			let years = Math.floor(totalMonths / 12);
+			let months = totalMonths % 12;
 
-			let months = end ? moment(end).diff(moment(start), 'months') : moment().diff(moment(start), 'months');
-			let years = 0;
+			let duration = `${months} meses`;
 
-			if (months > 12) {
-				years = months >= 12 ? Math.floor(months / 12) : 0;
-				months = months - (Math.floor(months / 12) * 12) + 1
-			}
-
-			let time = `${months} Meses`;
 			if (years > 0) {
-				time = `${years} Años`;
-				if (months == 1) {
-					time += ` y ${months} Mes`;
-				} else if (months > 0) {
-					time += ` y ${months} Meses`;
+				if (years == 1) {
+					duration = `${years} año`;
+				} else {
+					duration = `${years} años`;
+				}
+
+				if (includeMonths && months > 1) {
+					duration += ` y ${months} meses`;
 				}
 			}
 
-			let duration = humanReadable ? ` (${time})` : '';
+			return duration;
+		},
+		printDate(date, options = { year: 'numeric', month: 'short' }) {
+			let endDate = date ? new Date(date).toLocaleDateString('es-ES', options) : 'Presente';
+			
+			return endDate;
+		},
+		printDateRange(start, end = null, options = { year: 'numeric', month: 'short' }) {
+			let startDate = new Date(start).toLocaleDateString('es-ES', options);
+			let endDate = end ? new Date(end).toLocaleDateString('es-ES', options) : 'Presente';
 
-			return `${startDate} - ${endDate}` + duration;
-
+			return `${startDate} - ${endDate}`;
+		},
+		randomizeArray(arr) {
+			arr.sort(() => Math.random() - 0.5);
+			return arr;
 		}
 	},
 	created() {
 		this.fetchCvData()
 	}
 });
-
-

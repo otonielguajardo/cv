@@ -1,72 +1,127 @@
 {
     "fullName": "Alejandro Otoniel Guajardo Sánchez",
-    "job": "Web Developer",
-    "start": "2014-01-01",
-    "bio": "desarrollando aplicaciones centradas en generar valor a los usuarios. Mi interés es aportar mis habilidades y experiencia a una organización en la que empatemos en nuestros valores para crecer en sinergia y lograr nuestros objetivos.",
-    "phone": "8126227771",
+    "job": "Technical Project Manager",
+    "start": "2015-05-01",
+    "bio": "en desarrollo de software. He trabajado con equipos multidisciplinares en proyectos de diversas industrias, siendo responsable de alinear la visión de stakeholders clave con propuestas técnicas y determinar las rutas tecnológicas para ejecutar proyectos de alta complejidad con éxito",
     "city": "Morelia",
     "state": "Michoacán",
     "country": "MX",
-    "email": "otonielguajardo@yahoo.com",
-    "quote": "Mi‌ ‌background‌ ‌como‌‌ comunicador‌ ‌visual‌ ‌y‌ ‌mi‌‌ profundo‌ ‌interés‌ ‌por‌ ‌la‌‌ ingeniería‌ ‌de‌ ‌software,‌ ‌me‌ ‌han‌‌ ayudado‌ ‌a‌ ‌encontrar‌ ‌formas‌‌ creativas‌ ‌de‌ ‌resolver‌‌ problemas.‌",
-    "links": [{ "name": "github", "url": "https://github.com/otonielguajardo/cv" }],
-    "stack": [
-        { "name": "Angular", "start": "2017" },
-        { "name": "Vue", "start": "2016" },
-        { "name": "Rest APIs", "start": "2015" },
-        { "name": "Javascript", "start": "2013" },
-        { "name": "SQL", "start": "2013" },
-        { "name": "Git", "start": "2016" },
-        { "name": "CSS / SCSS", "start": "2013" },
-        { "name": "NodeJS", "start": "2015" },
-        { "name": "Photoshop", "start": "2006" },
-        { "name": "Illustrator", "start": "2008" }
+    "birthdate": "1991-04-27",
+    "quote": "",
+    "links": [
+        { "name": "phone", "label": "81 2622 7771", "url": "https://api.whatsapp.com/send?phone=8126227771" },
+        { "name": "email", "label": "otonielguajardo@gmail.com", "url": "mailto:otonielguajardo@gmail.com" },
+        { "name": "github", "label": "github.com/otonielguajardo", "url": "https://github.com/otonielguajardo/cv" },
+        { "name": "linkedin", "label": "linkedin.com/in/otonielguajardo", "url": "https://www.linkedin.com/in/otonielguajardo" }
     ],
-    "skills": ["Proactivo", "Responsable", "Autodidacta", "Adaptable", "Colaborativo"],
+    "tools": [
+        { "name": "Notion", "type": 1 },
+        { "name": "Figma", "type": 1 },
+        { "name": "Github", "type": 1 },
+        { "name": "Project Charter", "type": 1 },
+        { "name": "RACI", "type": 1 },
+        { "name": "SMART Objectives", "type": 1 },
+        { "name": "Asana", "type": 1 },
+        { "name": "Slack", "type": 1 },
+        { "name": "Monday", "type": 1 },
+        { "name": "Google Workspace", "type": 1 },
+        { "name": "Modelo Triple Restricción", "type": 1 },
+        { "name": "Matriz de poder-interés", "type": 1 },
+        { "name": "Equipo multidisciplinar", "type": 1 },
+        { "name": "Google Apps Script", "type": 2 },
+        { "name": "Google Gemini API", "type": 2 },
+        { "name": "Javascript", "type": 2 },
+        { "name": "Linux", "type": 2 },
+        { "name": "DNS", "type": 2 },
+        { "name": "Rest APIs", "type": 2 },
+        { "name": "Git", "type": 2 },
+        { "name": "PHP", "type": 2 },
+        { "name": "SCSS", "type": 2 },
+        { "name": "VSCode", "type": 2 },
+        { "name": "SQL", "type": 2 },
+        { "name": "Webhooks", "type": 2 },
+        { "name": "Websockets", "type": 2 },
+        { "name": "Ruby", "type": 2 },
+        { "name": "AWS", "type": 2 },
+        { "name": "Docker", "type": 2 }
+    ],
+    "skills": [
+        "Proactivo", "Creativo", "Resolutivo", "Autodidacta", "Colaborativo"
+    ],
     "jobs": [
         {
+            "company": "Civica Digital",
+            "url": "https://www.linkedin.com/company/civicadigital",
+            "city": "Monterrey",
+            "start": "2021-08-01",
+            "end": "2024-03-22",
+            "role": "Technical Lead / Technical PM",
+            "type": "Remote",
+            "description": "Implementación de soluciones a la medida para clientes del sector gobierno y non-profit",
+            "tasks": [
+                "Dirigí reuniones de sprint planning y touchpoints con stakeholders, asegurando la alineación de equipos y transparencia de proyectos",
+                "Gestioné el backlog de tareas en un entorno de constante adaptación, negociando recursos para resolver bloqueos",
+                "Realicé reportes de avances y <i>video-demos</i> de producto con alta calidad, manteniendo la documentación de los proyectos actualizada"
+            ]
+        },
+        {
             "company": "Prodelec",
+            "url": "https://www.linkedin.com/company/prodelecmx",
             "city": "Morelia",
             "start": "2019-07-01",
-            "end": null,
-            "title": "Lead Developer",
-            "subtitle": "",
-            "description": null,
+            "end": "2021-07-01",
+            "role": "Lead Developer",
+            "type": "Remote",
+            "description": "Implementación de interfaces avanzadas para la gestión de productos eléctricos en el sector comercial",
             "tasks": [
-                "Colaboracion en el diseño de productos digitales",
-                "Desarrollo‌ ‌de‌ ‌front-store responsive ‌en‌ ‌Angular‌ ‌y‌ ‌TailwindCSS",
-                "Desarrollo‌ ‌de‌ ‌app en Vue con conexión a MercadoLibre y ERP Intelisis",
-                "Automatización‌ ‌de‌ ‌publicaciones‌ ‌de‌ ‌MercadoLibre‌",
-                "Capacitación‌ ‌a y‌ ‌asesoramiento‌ ‌a‌l equipo de desarrollo"
+                "Analicé distintas necesidades de negocio que se transformaron con éxito en propuestas técnicas robustas y escalables",
+                "Seleccioné acertadamente proveedores de infraestructura de múltiples servicios/aplicaciones de la empresa",
+                "Determiné herramientas de trabajo para el equipo y ciclo de desarrollo que permitió una mejor cadencia de actualizaciones",
+                "Diseñé e implementé junto a mi equipo APIs que unificaron datos desde diferentes orígenes a través de un complejo proceso de sincronización"
             ]
         },
         {
             "company": "ExoTransport",
+            "url": "https://www.linkedin.com/company/exotransport",
             "city": "Monterrey",
             "start": "2018-06-01",
-            "end": "2019-05-01",
-            "title": "Full-Stack Developer",
-            "subtitle": "Freelance",
-            "description": null,
-            "tasks": [
-                "Colaboracion en el diseño de producto digital ExoTrack",
-                "Dashboard de seguimiento en tiempo real de embarques",
-                "Propuesta y desarrollo de app interna basada en Angular y Bulma"
-            ]
+            "end": "2019-06-01",
+            "role": "Full-Stack Developer",
+            "type": "Freelance",
+            "description": "Desarrollo de herramientas de tracking en el sector logística",
+            "tasks": []
         },
         {
             "company": "Pixelero",
             "city": "Monterrey",
+            "url": null,
             "start": "2015-09-01",
-            "end": "2017-12-01",
-            "title": "Full-Stack Developer",
-            "subtitle": null,
-            "description": null,
+            "end": "2017-12-29",
+            "role": "Full-Stack Developer",
+            "type": null,
+            "title": null,
+            "description": "Desarrollo de aplicaciones a la medida en fábrica de software",
             "tasks": [
                 "Desarrollo de aplicaciones en PHP Laravel y CodeIgniter",
                 "Bash scripting para configuración automatizada de servidores Linux",
                 "Diseño de temas custom para Wordpress y WooCommerce"
             ]
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Google‌",
+            "start": "2024-05-01",
+            "end": null,
+            "title": "Google Project Management: Professional Certificate",
+            "url": null
+        },
+        {
+            "name": "Google‌",
+            "start": "2024-05-01",
+            "end": "2024-05-25",
+            "title": "Foundations of Project Management",
+            "url": "https://www.coursera.org/account/accomplishments/verify/4JJZ57W7BPKG"
         }
     ],
     "schools": [
