@@ -55,8 +55,8 @@
             "city": "Monterrey",
             "start": "2021-08-01",
             "end": "2024-03-22",
-            "role": "Technical Lead / Technical PM",
-            "type": "Remote",
+            "role": "Technical PM / Technical Lead",
+            "type": "Remoto",
             "description": "Implementación de soluciones a la medida para clientes del sector gobierno y non-profit",
             "tasks": [
                 "Dirigí reuniones de sprint planning y touchpoints con stakeholders, asegurando la alineación de equipos y transparencia de proyectos",
@@ -71,7 +71,7 @@
             "start": "2019-07-01",
             "end": "2021-07-01",
             "role": "Lead Developer",
-            "type": "Remote",
+            "type": "Remoto",
             "description": "Implementación de interfaces avanzadas para la gestión de productos eléctricos en el sector comercial",
             "tasks": [
                 "Analicé distintas necesidades de negocio que se transformaron con éxito en propuestas técnicas robustas y escalables",
@@ -87,7 +87,7 @@
             "start": "2018-06-01",
             "end": "2019-06-01",
             "role": "Full-Stack Developer",
-            "type": "Freelance",
+            "type": "Híbrido",
             "description": "Desarrollo de herramientas de tracking en el sector logística",
             "tasks": []
         },
@@ -98,8 +98,7 @@
             "start": "2015-09-01",
             "end": "2017-12-29",
             "role": "Full-Stack Developer",
-            "type": null,
-            "title": null,
+            "type": "Híbrido",
             "description": "Desarrollo de aplicaciones a la medida en fábrica de software",
             "tasks": [
                 "Desarrollo de aplicaciones en PHP Laravel y CodeIgniter",
