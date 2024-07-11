@@ -71,13 +71,13 @@ new Vue({
 			return duration;
 		},
 		printDate(date, options = { year: 'numeric', month: 'short' }) {
-			let endDate = date ? new Date(date).toLocaleDateString('es-ES', options) : 'Presente';
+			let endDate = date ? new Date(date).toLocaleDateString('es-ES', options) : 'En curso';
 			
 			return endDate;
 		},
 		printDateRange(start, end = null, options = { year: 'numeric', month: 'short' }) {
 			let startDate = new Date(start).toLocaleDateString('es-ES', options);
-			let endDate = end ? new Date(end).toLocaleDateString('es-ES', options) : 'Presente';
+			let endDate = end ? new Date(end).toLocaleDateString('es-ES', options) : 'En curso';
 
 			return `${startDate} - ${endDate}`;
 		},
