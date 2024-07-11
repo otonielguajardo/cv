@@ -3,6 +3,7 @@ body {
     justify-content: center;
     line-height: 23px;
     font-size: 98%;
+    font-family: Arial, sans-serif;
 }
 
 * {
@@ -28,14 +29,18 @@ h2 {
 
 h1 {
     line-height: 30px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 h2 {
     text-transform: uppercase;
     font-size: 13px;
     color: rgb(32, 121, 199);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+strong {
+    font-weight: bolder;
 }
 
 small {
@@ -46,7 +51,7 @@ small {
     max-width: 760px;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 3fr 1fr;
     margin-bottom: 40px;
 }
 
@@ -54,53 +59,54 @@ aside,
 main {
     display: flex;
     flex-direction: column;
-    padding: 27px;
+    padding: 26px;
+}
+
+aside {
+    width: 180px;
 }
 
 aside > *:not(:last-child),
 main > *:not(:last-child) {
-    margin-bottom: 27px;
-}
-
-aside {
-    text-align: right;
+    margin-bottom: 20px;
 }
 
 main {
-    padding-left: 0;
+    padding-right: 0;
 }
 
 h3 + p:not(:last-child) {
     margin-bottom: 8px;
-    text-transform: uppercase;
     font-size: 13px;
 }
 
 .job ul {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.job ul li {
+    margin-bottom: 8px;
 }
 
 ul.pills {
     display: flex;
     flex-flow: wrap;
-    justify-content: flex-end;
 }
 
 ul.pills li {
-    background-color: rgb(32, 121, 199);
-    color: white;
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
     padding: 0px 6px;
     margin: 0px 4px 4px 0px;
     font-size: 14px;
-    font-weight: bold;
 }
 
 img {
     object-fit: cover;
     height: 140px;
-    width: 60%;
+    width: 70%;
     border-radius: 5px;
 }
 
@@ -110,7 +116,7 @@ img {
         padding: 15px;
     }
     main {
-        padding-left: 0;
+        padding-right: 0;
     }
     aside {
         font-size: 90%;
@@ -173,4 +179,16 @@ img {
     .md-hide {
         display: none;
     }
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.muted {
+    opacity: 50%;
 }
