@@ -1,5 +1,3 @@
-
-
 new Vue({
 	el: '#menu',
 	data: {
@@ -18,5 +16,3 @@ new Vue({
 		},
 	},
 });
-
-
