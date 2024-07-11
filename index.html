@@ -5,12 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Alejandro Otoniel Guajardo Sánchez - CV</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="styles/index.css?ver=2" />
         <link rel="stylesheet" href="styles/classic.css?ver=2" />
         <link rel="stylesheet" href="styles/dark.css?ver=2" />
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
     </head>
     <body class="classic">
         <div id="menu">
@@ -39,6 +37,7 @@
                         <p>
                             <span class="uppercase">{{ printDuration(job.start, job.end, true) }}</span>
                             <span class="uppercase muted">/ {{ printDateRange(job.start, job.end) }}</span>
+                            <span class="uppercase muted">• {{ job.type }}</span>
                         </p>
                         <p v-if="job.description">{{job.description}}</p>
                         <p v-for="project in job.projects">{{project.description}}</p>
