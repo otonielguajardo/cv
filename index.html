@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project Manager CV - Alejandro Otoniel Guajardo Sánchez</title>
+        <title>IT Project Manager CV - Alejandro Otoniel Guajardo Sánchez</title>
         <link rel="stylesheet" href="styles/index.css?ver=2" />
         <link rel="stylesheet" href="styles/classic.css?ver=2" />
         <link rel="stylesheet" href="styles/dark.css?ver=2" />
@@ -89,7 +89,11 @@
                 </ul>
                 <h2>Herramientas</h2>
                 <ul class="pills">
-                    <li v-for="tool in cv.tools">{{tool.name}}</li>
+                    <li v-for="tool in cv.tools.filter((tool) => tool.type == 1)">{{tool.name}}</li>
+                </ul>
+                <h2>Contexto tecnológico</h2>
+                <ul class="pills">
+                    <li v-for="tool in cv.tools.filter((tool) => tool.type == 2)">{{tool.name}}</li>
                 </ul>
                 <p>
                     <i>{{cv.quote}}</i>
