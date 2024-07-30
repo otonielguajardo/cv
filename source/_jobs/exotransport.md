@@ -9,7 +9,7 @@ city: "Monterrey"
 start: "2018-06-01"
 end: "2019-06-01"
 type: "Híbrido"
-description: "Desarrollo para real-time tracking de embarques en el sector logística"
+description: "Seguimiento en tiempo real de embarques en el sector logística"
 tasks: []
 stack:
   - "Angular"

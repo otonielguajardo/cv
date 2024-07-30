@@ -9,10 +9,10 @@ city: "Morelia"
 start: "2019-07-01"
 end: "2021-07-01"
 type: "Remoto"
-description: "Desarrollo de e-commerce multi-canal en el sector comercial"
+description: "Integración de ERP con E-Commerce multi-canal en el sector comercial"
 tasks:
-  - "Desarrollo de panel de control para gestión de productos y publicación multi-canal"
-  - "Diseño de proceso de sincronización entre bases de datos ERP Intelisis, catálogo digital y API MercadoLibre"
+  - "Desarrollo de admin para gestión de productos, reglas configurables de stock, precio y publicación para diferentes front-stores"
+  - "Implementación de proceso de sincronización automática entre datos de ERP Intelisis, API de catálogo digital y API MercadoLibre"
 stack:
   - "Laravel"
   - "Wordpress"
