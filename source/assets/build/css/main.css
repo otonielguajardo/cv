@@ -133,6 +133,7 @@ h3+p:not(:last-child) {
 ul.pills {
   display: flex;
   flex-flow: wrap;
+  list-style: none;
 }
 
 ul.pills li {
@@ -142,12 +143,12 @@ ul.pills li {
   font-size: 14px;
 }
 
-img {
+#profile {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 140px;
-  width: 70%;
-  border-radius: 5px;
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
 }
 
 @media only screen and (max-width: 600px) {

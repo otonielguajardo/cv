@@ -1,5 +1,5 @@
 ---
-extends: _layouts.app
+extends: _layouts.job
 section: content
 
 role: "Full-Stack Developer"
@@ -9,6 +9,12 @@ city: "Monterrey"
 start: "2018-06-01"
 end: "2019-06-01"
 type: "Híbrido"
-description: "Desarrollo de herramientas de tracking en el sector logística"
+description: "Desarrollo para real-time tracking de embarques en el sector logística"
 tasks: []
+stack:
+  - "Angular"
+  - "Bootstrap"
+  - "Directus CMS"
+  - "GraphQL API"
+  - "Heroku"
 ---

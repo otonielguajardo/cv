@@ -1,5 +1,5 @@
 ---
-extends: _layouts.app
+extends: _layouts.job
 section: content
 
 role: "Full-Stack Developer"
@@ -14,4 +14,11 @@ tasks:
   - "Desarrollo de aplicaciones en PHP Laravel y CodeIgniter"
   - "Bash scripting para configuración automatizada de servidores Linux"
   - "Diseño de temas custom para Wordpress y WooCommerce"
+stack:
+  - "Laravel"
+  - "Wordpress"
+  - "JQuery"
+  - "Bootstrap"
+  - "Conekta API"
+  - "OpenPay API"
 ---
