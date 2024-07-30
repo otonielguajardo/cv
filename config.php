@@ -40,7 +40,10 @@ return [
 			"Notion",
 			"Metodologías Ágiles",
 			"Google Workspace",
+			"Sprint planning",
 			"Planning poker",
+			"Diagrama ER",
+			"Diagrama UML",
 		],
 		"skills" => [
 			"Proactivo",

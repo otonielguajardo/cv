@@ -19,6 +19,7 @@ stack:
   - "Vue"
   - "Angular"
   - "MercadoLibre API"
+  - "MySQL"
   - "Heroku"
 ---
 

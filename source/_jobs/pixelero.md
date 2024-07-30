@@ -19,6 +19,6 @@ stack:
   - "Wordpress"
   - "JQuery"
   - "Bootstrap"
-  - "Conekta API"
   - "OpenPay API"
+  - "MySQL"
 ---

@@ -2,24 +2,24 @@
 extends: _layouts.job
 section: content
 
-role: "Lead Developer"
-company: "Civica Digital"
-url: "https://www.linkedin.com/company/civicadigital"
-city: "Monterrey"
-start: "2021-08-01"
-end: "2024-03-22"
-type: "Remoto"
-description: "Desarrollo de soluciones a la medida para sector gobierno y non-profit"
+role: 'Lead Developer'
+company: 'Civica Digital'
+url: 'https://www.linkedin.com/company/civicadigital'
+city: 'Monterrey'
+start: '2021-08-01'
+end: '2024-03-22'
+type: 'Remoto'
+description: 'Desarrollo de aplicaciones a la medida para sector gobierno y non-profit'
 tasks:
-  - "Planifiqué el backlog de tareas y dirigí reuniones de sprint planning, asegurando la alineación del equipo y la claridad de expectativas"
-  - "Integración con el SAT para firma electrónica Integración con el SAT para firma electrónica Integración con el SAT para firma electrónica Integración con el SAT para firma electrónica"
-  - "integración con sistemas de autenticación externos"
+  - 'Firma electrónica de documentos, verificación con <a href="https://github.com/kjur/jsrsasign" target="_blank">jsrsasign</a> y validación de vigencia de la FIEL vía integración con SAT webservice'
+  - 'Plataforma de digitalización de oficios utilizando <a href="https://github.com/Shopify/liquid" target="_blank">liquid</a> template engine para previsualización en tiempo real de documentos'
+  - ''
 stack:
-  - "Ruby on Rails"
-  - "Angular"
-  - "JQuery"
-  - "Bootstrap"
-  - "Docker"
-  - "AWS"
+  - 'Ruby on Rails'
+  - 'Angular'
+  - 'JQuery'
+  - 'Bootstrap'
+  - 'PostgreSQL'
+  - 'AWS'
 ---
 

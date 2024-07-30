@@ -16,5 +16,6 @@ stack:
   - "Bootstrap"
   - "Directus CMS"
   - "GraphQL API"
+  - "PostgreSQL"
   - "Heroku"
 ---
