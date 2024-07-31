@@ -1,0 +1,20 @@
+body.classic {
+    background-color: white;
+    color: rgb(36, 40, 46);
+}
+
+.classic #menu img {
+    background-color: white;
+}
+
+h2 {
+    color: rgb(32, 121, 199);
+}
+
+ul.pills li {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.highlight {
+    background-color: yellow !important;
+}
