@@ -14,6 +14,10 @@ h2 {
 ul.pills li {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+.highlight {
+    background-color: yellow !important;
+}
 body.dark {
     background-color: rgb(35, 40, 52);
     color: rgb(203, 204, 198);
@@ -38,6 +42,10 @@ body.dark {
 
 .dark .pills li {
     background-color: rgb(51, 58, 75);
+}
+
+.highlight {
+    color: black
 }
 body {
   display: flex;

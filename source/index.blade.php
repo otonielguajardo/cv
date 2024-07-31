@@ -17,7 +17,8 @@
 			<ul>
 				<li class="job">
 					<h3>
-						<strong>{{ $job->role }}</strong> <small><a target="_blank" href="{{ $job->url }}"><span>@</span>{{ $job->company }}</a></small>
+						<strong>{{ $job->role }}</strong> <small><a target="_blank"
+								href="{{ $job->url }}"><span>@</span>{{ $job->company }}</a></small>
 					</h3>
 					<p>
 						<span class="uppercase">{{ printDuration($job->start, $job->end, true) }}</span>
@@ -35,7 +36,7 @@
 				</li>
 				<ul class="pills">
 					@foreach ($job->stack as $tool)
-						<li>{{ $tool }}</li>
+						<li data-highlight="{{ highlightables($tool) }}">{{ $tool }}</li>
 					@endforeach
 				</ul>
 			</ul>
@@ -63,7 +64,7 @@
 		<h2>Lenguajes</h2>
 		<ul class="pills">
 			@foreach ($page->cv->languages as $language)
-				<li>{{ $language }}</li>
+				<li data-highlight="{{ highlightables($language) }}">{{ $language }}</li>
 			@endforeach
 		</ul>
 		<h2>Certificaciones</h2>
@@ -93,5 +94,37 @@
 	function printPage() {
 		window.print();
 	}
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const elements = document.querySelectorAll("[data-highlight]");
+
+		elements.forEach(element => {
+			element.addEventListener("mouseover", function () {
+				highlightMatchingElements(element, true);
+			});
+
+			element.addEventListener("mouseout", function () {
+				highlightMatchingElements(element, false);
+			});
+		});
+
+		function highlightMatchingElements(element, highlight) {
+			const dataHighlight = element.getAttribute("data-highlight");
+			const values = JSON.parse(dataHighlight);
+
+			elements.forEach(el => {
+				const elValues = JSON.parse(el.getAttribute("data-highlight"));
+				const hasIntersection = values.some(value => elValues.includes(value));
+
+				if (hasIntersection) {
+					if (highlight) {
+						el.classList.add("highlight");
+					} else {
+						el.classList.remove("highlight");
+					}
+				}
+			});
+		}
+	});
 </script>
 @endsection

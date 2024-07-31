@@ -65,3 +65,38 @@ function printDuration($start, $end = null, $includeMonths = true)
 
   return $duration;
 }
+
+function sluggify($string)
+{
+  return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $string)));
+}
+
+function highlightables($string = "")
+{
+  $collections = [
+    ["PHP", "Laravel", "Wordpress"],
+    ["Ruby", "Ruby on Rails"],
+    ["SQL", "MySQL", "PostgreSQL"],
+    ["SCSS", "CSS", "Bootstrap"],
+    ["Javascript", "Directus CMS", "JQuery", "Vue"],
+    ["Typescript", "Angular"],
+  ];
+
+  // Convert items to their sluggified versions
+  $collections = array_map(function ($items) {
+    return array_map(fn($item) => sluggify($item), $items);
+  }, $collections);
+
+  // Sluggify the search string
+  $sluggifiedString = sluggify($string);
+
+  // Search for the collection containing the sluggified string
+  foreach ($collections as $collection) {
+    if (in_array($sluggifiedString, $collection)) {
+      return json_encode($collection);
+    }
+  }
+
+  // Return null if no match is found
+  return json_encode([]);
+}

@@ -14,3 +14,7 @@ h2 {
 ul.pills li {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+.highlight {
+    background-color: yellow !important;
+}
