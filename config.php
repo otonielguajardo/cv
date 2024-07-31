@@ -30,10 +30,11 @@ return [
 			"PHP",
 			"Ruby",
 			"SQL",
-			"HTML",
-			"CSS", "SCSS",
 			"Javascript",
 			"Typescript",
+			"HTML",
+			"CSS",
+			"SCSS",
 		],
 		"tools" => [
 			"Github",
