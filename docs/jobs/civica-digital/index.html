@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="/jobs/civica-digital">
+<meta name="description" content="Desarrollo de aplicaciones a la medida para sector gobierno y non-profit">
+<title>Otoniel Guajardo - Full-stack Developer</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/assets/build/css/main.css?id=f1fb8915c1daca0dd9f8b160d9be0890">
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="classic">
+		
+	<div id="menu">
+    <img onclick="toggleTheme()" id="themer" width="100%" height="auto" src="/assets/images/icons/moon-light.png" />
+  <a href="https://github.com/otonielguajardo/cv" target="_blank" style="display:flex;">
+    <img id="info" width="100%" height="auto" src="/assets/images/icons/info-light.png" />
+  </a>
+</div>
+
+<script>
+  function toggleTheme() {
+    let body = document.querySelector('body');
+    let printer = document.getElementById('printer');
+    let themer = document.getElementById('themer');
+    let info = document.getElementById('info');
+
+    body.className = body.className == 'classic' ? 'dark' : 'classic';
+    let themerIcon = body.className == 'classic' ? 'moon-light' : 'sun-dark';
+    let printerIcon = body.className == 'classic' ? 'printer-light' : 'printer-dark';
+    let infoIcon = body.className == 'classic' ? 'info-light' : 'info-dark';
+
+    printer.src = `/assets/images/icons/${printerIcon}.png`;
+    themer.src = `/assets/images/icons/${themerIcon}.png`;
+    info.src = `/assets/images/icons/${infoIcon}.png`;
+  }
+</script>
+	</body>
+</html>

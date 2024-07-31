@@ -5,7 +5,7 @@ return [
 	'baseUrl' => '',
 	'title' => 'Otoniel Guajardo - Full-stack Developer',
 	'repoUrl' => 'https://github.com/otonielguajardo/cv',
-	'description' => 'Website description.',
+	'description' => 'Otoniel Guajardo - Full-stack Developer',
 	'collections' => [
 		'jobs' => [
 			'sort' => '-end',
