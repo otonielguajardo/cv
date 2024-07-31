@@ -4,6 +4,7 @@ return [
 	'production' => false,
 	'baseUrl' => '',
 	'title' => 'Otoniel Guajardo - Full-stack Developer',
+	'repoUrl' => 'https://github.com/otonielguajardo/cv',
 	'description' => 'Website description.',
 	'collections' => [
 		'jobs' => [
@@ -23,7 +24,7 @@ return [
 		"links" => [
 			["name" => "phone", "label" => "81 2622 7771", "url" => "https://api.whatsapp.com/send?phone=8126227771"],
 			["name" => "email", "label" => "otonielguajardo@gmail.com", "url" => "mailto:otonielguajardo@gmail.com"],
-			["name" => "github", "label" => "github.com/otonielguajardo", "url" => "https://github.com/otonielguajardo/cv"]
+			["name" => "github", "label" => "github.com/otonielguajardo", "url" => "https://github.com/otonielguajardo"]
 		],
 		"languages" => [
 			"PHP",
