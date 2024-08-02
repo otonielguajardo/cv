@@ -44,9 +44,7 @@
 	</main>
 	<aside>
 		<div>
-			<a href="/assets/images/picture.png" target="_blank">
-				<img id="profile" src="/assets/images/picture.png" />
-			</a>
+			@include('_partials.avatar')
 		</div>
 		<div v-if="$page->cv->links">
 			<p>{{ printDuration($page->cv->birthdate, null, false) }}</p>
