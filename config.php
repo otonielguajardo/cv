@@ -8,22 +8,20 @@ return [
 	'description' => 'Otoniel Guajardo - Full-stack Developer',
 	'collections' => [
 		'jobs' => [
-			'sort' => '-end',
+			'sort' => '-start',
 		]
 	],
 	'cv' => [
 		"fullName" => "Alejandro Otoniel Guajardo Sánchez",
 		"job" => "Full-stack Developer",
 		"start" => "2015-05-01",
-		"bio" => "desarrollando aplicaciones e integraciones para distintas industrias. He colaborado en equipos multidisciplinares, siendo responsable de analizar necesidades y generar propuestas técnicas escalables que se alinien con la visión del proyecto y resuelvan los requerimientos en tiempo y forma",
+		"bio" => "en el desarrollo de aplicaciones e integraciones con tecnologías web. He colaborado con equipos multidisciplinares, siendo responsable de analizar necesidades y generar propuestas técnicas inovadoras que se alinien con la visión de la organización, resolviendo requerimientos en tiempo y forma",
 		"city" => "Morelia",
 		"state" => "Michoacán",
 		"country" => "MX",
 		"birthdate" => "1991-04-27",
 		"quote" => "",
 		"links" => [
-			["name" => "phone", "label" => "81 2622 7771", "url" => "https://api.whatsapp.com/send?phone=8126227771"],
-			["name" => "email", "label" => "otonielguajardo@gmail.com", "url" => "mailto:otonielguajardo@gmail.com"],
 			["name" => "github", "label" => "github.com/otonielguajardo", "url" => "https://github.com/otonielguajardo"]
 		],
 		"languages" => [

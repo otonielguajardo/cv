@@ -34,7 +34,7 @@ function printDateRange($start, $end = null, $includeMonth = true)
   $format = $includeMonth ? 'M Y' : 'Y';
 
   $formattedStartDate = $startDate->translatedFormat($format);
-  $formattedEndDate = $end ? $endDate->translatedFormat($format) : 'En curso';
+  $formattedEndDate = $end ? $endDate->translatedFormat($format) : 'Presente';
 
   return "$formattedStartDate - $formattedEndDate";
 }
@@ -78,7 +78,7 @@ function highlightables($string = "")
     ["Ruby", "Ruby on Rails"],
     ["SQL", "MySQL", "PostgreSQL"],
     ["SCSS", "CSS", "Bootstrap"],
-    ["Javascript", "Directus CMS", "JQuery", "Vue"],
+    ["Javascript", "Directus CMS", "JQuery", "Vue", "Livewire"],
     ["Typescript", "Angular"],
   ];
 

@@ -1,7 +1,4 @@
 ---
-extends: _layouts.job
-section: content
-
 role: 'Lead Developer'
 company: 'Civica Digital'
 url: 'https://www.linkedin.com/company/civicadigital'
