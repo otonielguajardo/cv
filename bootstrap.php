@@ -74,11 +74,11 @@ function sluggify($string)
 function highlightables($string = "")
 {
   $collections = [
-    ["PHP", "Laravel", "Wordpress"],
+    ["PHP", "Laravel", "Wordpress", "Livewire"],
     ["Ruby", "Ruby on Rails"],
     ["SQL", "MySQL", "PostgreSQL"],
     ["SCSS", "CSS", "Bootstrap"],
-    ["Javascript", "Directus CMS", "JQuery", "Vue", "Livewire"],
+    ["Javascript", "Directus CMS", "JQuery", "Vue", "Alpine"],
     ["Typescript", "Angular"],
   ];
 
